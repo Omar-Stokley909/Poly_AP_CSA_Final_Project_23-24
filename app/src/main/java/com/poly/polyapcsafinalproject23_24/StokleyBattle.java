@@ -1,11 +1,11 @@
 package com.poly.polyapcsafinalproject23_24;
 
 public class StokleyBattle {
-    private Sorcerer player;
-    private Sorcerer enemy;
+    private StokleySorcerer player;
+    private StokleySorcerer enemy;
     private int turn;
 
-    public Battle(Sorcerer player, Sorcerer enemy)
+    public Battle(StokleySorcerer player, StokleySorcerer enemy)
     {
         /**
          *establishing which character is the player and which is the enemy

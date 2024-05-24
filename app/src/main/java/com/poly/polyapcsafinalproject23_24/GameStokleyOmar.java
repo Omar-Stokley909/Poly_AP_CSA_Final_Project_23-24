@@ -1,39 +1,42 @@
+import com.poly.polyapcsafinalproject23_24.StokleySorcerer;
+import com.poly.polyapcsafinalproject23_24.StokleySorcererFactory;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class GameStokleyOmar {
 
     //create variables up here
-    private Sorcerer player;
-    private ArrayList<Sorcerer> characters;
+    private StokleySorcerer player;
+    private ArrayList<StokleySorcerer> characters;
 
     public Game()
     {
         /**
          *array of characters from SorcererFactory
          */
-        this.characters = new ArrayList<Sorcerer>();
-        characters.add( SorcererFactory.itadori() );
-        characters.add( SorcererFactory.megumi() );
-        characters.add( SorcererFactory.nobara() );
-        characters.add( SorcererFactory.Gojo() );
-        characters.add( SorcererFactory.geto() );
-        characters.add( SorcererFactory.Jogo() );
-        characters.add( SorcererFactory.Dagon() );
-        characters.add( SorcererFactory.hanami() );
-        characters.add( SorcererFactory.mahito() );
-        characters.add( SorcererFactory.toji() );
-        characters.add( SorcererFactory.yuta() );
-        characters.add( SorcererFactory.Choso() );
-        characters.add( SorcererFactory.maki() );
-        characters.add( SorcererFactory.inumaki() );
-        characters.add( SorcererFactory.kashimo() );
-        characters.add( SorcererFactory.mahoraga() );
-        characters.add( SorcererFactory.transformedMahito() );
-        characters.add( SorcererFactory.yorozu() );
-        characters.add( SorcererFactory.kenjaku() );
-        characters.add( SorcererFactory.kusakabe() );
-        characters.add( SorcererFactory.sukuna() );
+        this.characters = new ArrayList<StokleySorcerer>();
+        characters.add( StokleySorcererFactory.itadori() );
+        characters.add( StokleySorcererFactory.megumi() );
+        characters.add( StokleySorcererFactory.nobara() );
+        characters.add( StokleySorcererFactory.Gojo() );
+        characters.add( StokleySorcererFactory.geto() );
+        characters.add( StokleySorcererFactory.Jogo() );
+        characters.add( StokleySorcererFactory.Dagon() );
+        characters.add( StokleySorcererFactory.hanami() );
+        characters.add( StokleySorcererFactory.mahito() );
+        characters.add( StokleySorcererFactory.toji() );
+        characters.add( StokleySorcererFactory.yuta() );
+        characters.add( StokleySorcererFactory.Choso() );
+        characters.add( StokleySorcererFactory.maki() );
+        characters.add( StokleySorcererFactory.inumaki() );
+        characters.add( StokleySorcererFactory.kashimo() );
+        characters.add( StokleySorcererFactory.mahoraga() );
+        characters.add( StokleySorcererFactory.transformedMahito() );
+        characters.add( StokleySorcererFactory.yorozu() );
+        characters.add( StokleySorcererFactory.kenjaku() );
+        characters.add( StokleySorcererFactory.kusakabe() );
+        characters.add( StokleySorcererFactory.sukuna() );
     }
 
 

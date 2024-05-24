@@ -1,12 +1,43 @@
-package com.poly.polyapcsafinalproject23_24;
+import com.poly.polyapcsafinalproject23_24.StokleyAttack;
 
 public class StokleySorcerer {
+    ;
+    //attributes
+    //instance variables
+    //fields
+
+    private String name;
+    private int hp;
+    private StokleyAttack lightAttack;
+    private StokleyAttack heavyAttack;
+    private StokleyAttack specialAttack;
+    private boolean isBlocking;
+    private final int ID;
+    private static int numSorcerers;
+    //---------------------------------------------------------------------------------------------------------------------------------
+    //CONSTRUCTORS
+    //Constructors are used to initializes objects from the class
+    //DEFAULT CONSTRUCTOR - no parameters
+    //aka Pig piggy = new pig
+    //---------------------------------------------------------------------------------------------------------------------------------
+    public StokleySorcerer()
     {
         this.name = " ";
         this.hp = 0;
-        this.lightAttack = new Attack();
-        this.heavyAttack = new Attack();
-        this.specialAttack = new Attack();
+        this.lightAttack = new StokleyAttack();
+        this.heavyAttack = new StokleyAttack();
+        this.specialAttack = new StokleyAttack();
+        numSorcerers++;
+        this.ID = numSorcerers;
+    }
+
+    public StokleySorcerer(String name, int hp)
+    {
+        this.name = name;
+        this.hp = hp;
+        this.lightAttack = new StokleyAttack();
+        this.heavyAttack = new StokleyAttack();
+        this.specialAttack = new StokleyAttack();
         numSorcerers++;
         this.ID = numSorcerers;
     }
@@ -30,17 +61,17 @@ public class StokleySorcerer {
         return isBlocking;
     }
 
-    public Attack getLightAttack()
+    public StokleyAttack getLightAttack()
     {
         return lightAttack;
     }
 
-    public Attack getHeavyAttack()
+    public StokleyAttack getHeavyAttack()
     {
         return heavyAttack;
     }
 
-    public Attack getSpecialAttack()
+    public StokleyAttack getSpecialAttack()
     {
         return specialAttack;
     }
@@ -62,17 +93,17 @@ public class StokleySorcerer {
 
     public void setLightAttacK(String name, int dmg, double accuracy)
     {
-        this.lightAttack = new Attack(name, dmg, accuracy, false);
+        this.lightAttack = new StokleyAttack(name, dmg, accuracy, false);
     }
 
     public void setHeavyAttacK(String name, int dmg, double accuracy)
     {
-        this.heavyAttack = new Attack(name, dmg, accuracy, true);
+        this.heavyAttack = new StokleyAttack(name, dmg, accuracy, true);
     }
 
     public void setSpecialAttack(String name, int dmg, double accuracy, boolean isHeavyAttack, String effect)
     {
-        this.specialAttack = new Attack(name, dmg, accuracy, isHeavyAttack, effect);
+        this.specialAttack = new StokleyAttack(name, dmg, accuracy, isHeavyAttack, effect);
     }
 
     public void takeDamage(int damageTaken)
@@ -98,5 +129,4 @@ public class StokleySorcerer {
         }
         return true;
     }
-}
 }
