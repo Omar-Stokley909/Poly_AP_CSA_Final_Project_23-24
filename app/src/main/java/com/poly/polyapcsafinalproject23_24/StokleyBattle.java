@@ -5,7 +5,7 @@ public class StokleyBattle {
     private StokleySorcerer enemy;
     private int turn;
 
-    public Battle(StokleySorcerer player, StokleySorcerer enemy)
+    public StokleyBattle(StokleySorcerer player, StokleySorcerer enemy)
     {
         /**
          *establishing which character is the player and which is the enemy
@@ -56,13 +56,13 @@ public class StokleyBattle {
     }
 
 
-    private void takeTurnAttacking(Sorcerer attacker, Sorcerer defender)
+    private void takeTurnAttacking(StokleySorcerer attacker, StokleySorcerer defender)
     /**
      *setting the attacks for both player and enemy
      */
     {
         attacker.setBlocking(false);
-        Attack attack = new Attack();
+        StokleyAttack attack = new StokleyAttack();
 
         int option = 1;
 

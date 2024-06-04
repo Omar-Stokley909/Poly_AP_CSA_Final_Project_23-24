@@ -1,7 +1,10 @@
+package com.poly.polyapcsafinalproject23_24;
+
+import com.poly.polyapcsafinalproject23_24.StokleyAttack;
+import com.poly.polyapcsafinalproject23_24.StokleyBattle;
 import com.poly.polyapcsafinalproject23_24.StokleySorcerer;
 import com.poly.polyapcsafinalproject23_24.StokleySorcererFactory;
 
-import java.util.Scanner;
 import java.util.ArrayList;
 
 public class GameStokleyOmar {
@@ -10,7 +13,7 @@ public class GameStokleyOmar {
     private StokleySorcerer player;
     private ArrayList<StokleySorcerer> characters;
 
-    public Game()
+    public GameStokleyOmar()
     {
         /**
          *array of characters from SorcererFactory
@@ -77,8 +80,8 @@ public class GameStokleyOmar {
     {
         for (int i=0; i<characters.size(); i++)
         {
-            Battle battle = new Battle(player, characters.get(i));
-            battle.run();
+            StokleyBattle = new StokleyBattle(player, characters.get(i));
+            StokleyAttack.run();
         }
     }
 

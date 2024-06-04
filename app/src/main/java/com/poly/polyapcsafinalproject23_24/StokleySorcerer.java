@@ -1,3 +1,5 @@
+package com.poly.polyapcsafinalproject23_24;
+
 import com.poly.polyapcsafinalproject23_24.StokleyAttack;
 
 public class StokleySorcerer {
@@ -116,7 +118,7 @@ public class StokleySorcerer {
         return "Sorcerer Name: " + name +
                 "\t\tHP: " + hp;
     }
-    public boolean equals (Sorcerer anotherSorcerer)
+    public boolean equals (StokleySorcerer anotherSorcerer)
     {
         if (this.name.equals(anotherSorcerer.name) &&
                 this.lightAttack.equals(anotherSorcerer.lightAttack) &&

@@ -1,15 +1,16 @@
 package com.poly.polyapcsafinalproject23_24;
 
-public class StokleyAttack { /**
- *attack class where all of the attacks exist and function within each other
- */
-private String name;
+public class StokleyAttack {
+    /**
+     *attack class where all of the attacks exist and function within each other
+     */
+    private String name;
     private int dmg;
     private double acc;
     private boolean isHeavyAttack;
     private String effect;
 
-    public Attack()
+    public StokleyAttack()
     {
         this.name = "Empty";
         this.dmg = 0;
@@ -19,7 +20,7 @@ private String name;
     }
 
     //used for light and heavy attacks
-    public Attack (String name, int dmg, double accuracy, boolean isHeavyAttack)
+    public StokleyAttack (String name, int dmg, double accuracy, boolean isHeavyAttack)
     {
         this.name = name;
         this.dmg = dmg;
@@ -29,7 +30,7 @@ private String name;
     }
 
     //used for special attacks
-    public Attack (String name, int dmg, double accuracy, boolean isHeavyAttack, String effect)
+    public StokleyAttack (String name, int dmg, double accuracy, boolean isHeavyAttack, String effect)
     {
         this.name = name;
         this.dmg = dmg;
@@ -74,4 +75,6 @@ private String name;
     public void setEffect(String effect) {
         this.effect = effect;
     }
+
+
 }
