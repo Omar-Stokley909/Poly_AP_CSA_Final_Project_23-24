@@ -13,6 +13,7 @@ public class StokleySorcerer {
     private StokleyAttack lightAttack;
     private StokleyAttack heavyAttack;
     private StokleyAttack specialAttack;
+    private String quote;
     private boolean isBlocking;
     private final int ID;
     private static int numSorcerers;
@@ -56,6 +57,11 @@ public class StokleySorcerer {
     public int getHp()
     {
         return hp;
+    }
+
+    public String getQuote(){return quote;}
+    public void setQuote(String quote) {
+        this.quote = quote;
     }
 
     public boolean isBlocking()
