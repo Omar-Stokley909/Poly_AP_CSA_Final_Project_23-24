@@ -1,17 +1,19 @@
 package com.poly.polyapcsafinalproject23_24;
 
-import com.poly.polyapcsafinalproject23_24.StokleyAttack;
-import com.poly.polyapcsafinalproject23_24.StokleyBattle;
-import com.poly.polyapcsafinalproject23_24.StokleySorcerer;
-import com.poly.polyapcsafinalproject23_24.StokleySorcererFactory;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-public class GameStokleyOmar {
+public class GameStokleyOmar extends GameActivity {
 
     //create variables up here
     private StokleySorcerer player;
     private ArrayList<StokleySorcerer> characters;
+
+    private int curCharacterSelectIndex;
+    private ImageView ivCharSelect;
 
     public GameStokleyOmar()
     {
@@ -66,23 +68,43 @@ public class GameStokleyOmar {
       """;
         System.out.println(text);
 
-        for (int i=0; i<characters.size(); i++)
-        {
-            System.out.println( (i+1) + ": " + characters.get(i).getName() );
-        }
-        int option = Util.enterInt(1,characters.size());
+        Button btnPrev, btnNext;
+        btnPrev = findViewById(R.id.btn_prev);
+        btnNext = findViewById(R.id.btn_next);
 
-        player = characters.get(option-1);
-        characters.remove(option-1);
+        curCharacterSelectIndex = 0;
+
+        btnPrev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                curCharacterSelectIndex = ((curCharacterSelectIndex - 1) + characters.size()) % characters.size();
+
+                ivCharSelect.setImageResource(characters.get(curCharacterSelectIndex).getImageId());
+
+
+            }
+        });
+
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                curCharacterSelectIndex = ((curCharacterSelectIndex + 1) + characters.size()) % characters.size();
+            }
+        });
+
     }
 
     private void goToTheArena()
     {
         for (int i=0; i<characters.size(); i++)
         {
-            StokleyBattle = new StokleyBattle(player, characters.get(i));
-            StokleyAttack.run();
+            StokleyBattle battle = new StokleyBattle(player, characters.get(i));
+            battle.run();
         }
+    }
+
+    private void runBattle() {
+
     }
 
 

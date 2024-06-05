@@ -14,6 +14,10 @@ public class StokleySorcerer {
     private StokleyAttack heavyAttack;
     private StokleyAttack specialAttack;
     private String quote;
+
+
+
+    private int imageId;
     private boolean isBlocking;
     private final int ID;
     private static int numSorcerers;
@@ -62,6 +66,14 @@ public class StokleySorcerer {
     public String getQuote(){return quote;}
     public void setQuote(String quote) {
         this.quote = quote;
+    }
+
+    public int getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
     }
 
     public boolean isBlocking()

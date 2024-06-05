@@ -11,15 +11,17 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Divergent Fist", 185, 0.8);
         sorcerer.setSpecialAttack("Black Flash", 375, 1.0, false, "None");
         sorcerer.setQuote("I am a jujutsu sorcerer");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_yuji);
         return sorcerer;
     }
     public static StokleySorcerer sukuna()
     {
         StokleySorcerer sorcerer = new StokleySorcerer("Ryomen Sukuna",1805);
-        sorcerer.setLightAttacK("Cleave", 450, 0.7);
-        sorcerer.setHeavyAttacK("Dismantle", 400, 1.0);
-        sorcerer.setSpecialAttack("Domain Expansion: Malevolent Shrine", 500, 1.0, true, "bleed");
+        sorcerer.setLightAttacK("Cleave", 470, 0.7);
+        sorcerer.setHeavyAttacK("Dismantle", 450, 1.0);
+        sorcerer.setSpecialAttack("Domain Expansion: Malevolent Shrine", 600, 1.0, true, "bleed");
         sorcerer.setQuote("I am the strongest!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_sukuna);
         return sorcerer;
     }
     public static StokleySorcerer megumi()
@@ -29,15 +31,17 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Nue Shock Dive", 200, 0.6);
         sorcerer.setSpecialAttack("Domain Expansion: Chimera Shadow Garden", 350, 1.0, true, "None");
         sorcerer.setQuote("WITH THIS SACRED TREASURE I SUMMON-");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_megumi);
         return sorcerer;
     }
     public static StokleySorcerer mahoraga()
     {
         StokleySorcerer sorcerer = new StokleySorcerer("Eight-Handled Sword Divergent Sila Divine General Mahoraga", 1900);
-        sorcerer.setLightAttacK("Adapting Slash", 75, 1.0);
-        sorcerer.setHeavyAttacK("Grab 'n Smash'", 80, 0.8);
+        sorcerer.setLightAttacK("Adapting Slash", 350, 1.0);
+        sorcerer.setHeavyAttacK("Grab 'n Smash'", 475, 0.8);
         sorcerer.setSpecialAttack("Immideate Adaptation", 0, 1.0, true, "Strengthen");
         sorcerer.setQuote("Big Ragga, the opp stoppa has arrived");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_maahoraga);
         return sorcerer;
     }
     public static StokleySorcerer nobara()
@@ -47,6 +51,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Hairpin", 90, 0.7);
         sorcerer.setSpecialAttack("Resonance", 240, 1.0, true, "Weakened");
         sorcerer.setQuote("See you in hell loser!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_nobara);
         return sorcerer;
     }
     public static StokleySorcerer Gojo()
@@ -56,6 +61,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Hollow Purple", 280, 0.6);
         sorcerer.setSpecialAttack("Domain Expansion: Unlimited Void", 400, 1.0, true, "Stunned");
         sorcerer.setQuote("Wow, that almost made me sweat!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_gojo);
         return sorcerer;
     }
     public static StokleySorcerer Jogo()
@@ -65,6 +71,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Max Meteor", 350, 0.5);
         sorcerer.setSpecialAttack("Domain Expansion: Coffin of the Iron Mountain", 450, 1.0, true, "None");
         sorcerer.setQuote("No matter what, curses will become the true humans!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_jogo);
         return sorcerer;
     }
     public static StokleySorcerer Dagon()
@@ -74,6 +81,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Scary Fish", 280, 0.8);
         sorcerer.setSpecialAttack("Domain Expansion: Horizon of the Captivating Skandhva", 450, 1.0, true, "None");
         sorcerer.setQuote("Gurgle Gurgle, blub!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_dagon);
         return sorcerer;
     }
     public static StokleySorcerer hanami()
@@ -83,6 +91,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Cursed Bud", 75, 1.0);
         sorcerer.setSpecialAttack("Domain Expansion: Cerimonial Sea of Light", 375, 1.0, true, "None");
         sorcerer.setQuote("Yroticv hitw ecarg");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_hanami);
         return sorcerer;
     }
 
@@ -93,6 +102,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Idle Transfiguration", 1500, 0.1);
         sorcerer.setSpecialAttack("Domain Expansion: Self Embodiment of Perfection", 500, 1.0, true, "None");
         sorcerer.setQuote("wow that was fun! we should totally do it again sometime!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_mahito);
         return sorcerer;
     }
     public static StokleySorcerer transformedMahito()
@@ -102,6 +112,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Soul Multiplicty", 290, 1.0);
         sorcerer.setSpecialAttack("Black Flash", 500, 1.0, false, "None");
         sorcerer.setQuote("I truly am...a curse!!!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_trueMahito);
         return sorcerer;
     }
 
@@ -112,6 +123,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Heavenly Spear", 250, 0.8);
         sorcerer.setSpecialAttack("Overwhelming Intensity", 150, 1.0, true, "Strengthen");
         sorcerer.setQuote("All that to lose to a Jujuitsu-less monkey like me");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_toji);
         return sorcerer;
     }
     public static StokleySorcerer yuta()
@@ -121,6 +133,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Curse Crush", 125, 0.8);
         sorcerer.setSpecialAttack("Domain Expansion: True and Mutual Love", 375, 1.0, true, "None");
         sorcerer.setQuote("I may be cursed, but I will never let that define me,");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_yuta);
         return sorcerer;
     }
     public static StokleySorcerer Choso()
@@ -130,6 +143,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Piercing Blood", 95, 1.0);
         sorcerer.setSpecialAttack("Convergence: Supernova", 350, 1.0, false, "Poisoned");
         sorcerer.setQuote("This...is for my brothers!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_choso);
         return sorcerer;
     }
     public static StokleySorcerer maki()
@@ -139,6 +153,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Playful Cloud", 150, 0.7);
         sorcerer.setSpecialAttack("Forged in Flames", 150, 1.0, false, "strengthen");
         sorcerer.setQuote("I will never embrace the Zen'in clan");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_maki);
         return sorcerer;
     }
     public static StokleySorcerer inumaki()
@@ -148,6 +163,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Fall", 180, 0.8);
         sorcerer.setSpecialAttack("Freeze, Smash, Fall", 350, 1.0, false, "Stunned");
         sorcerer.setQuote("Salmon roe, kelp, rice balls");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_inumaki);
         return sorcerer;
     }
     public static StokleySorcerer kashimo()
@@ -157,6 +173,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Thunder Gauntlet", 180, 0.8);
         sorcerer.setSpecialAttack("Lightning Discharge", 400, 1.0, true, "Stunned");
         sorcerer.setQuote("Turn up the volume! This is a funeral for the living!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_kashimo);
         return sorcerer;
     }
 
@@ -167,6 +184,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Evening Moon Sword Drawing", 180, 0.8);
         sorcerer.setSpecialAttack("Simple Domain: Rending Moonbow", 350, 1.0, false, "None");
         sorcerer.setQuote("Am I finally done? Jeez took long enough");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_kusakabe);
         return sorcerer;
     }
 
@@ -177,6 +195,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Swirling Centipedes", 280, 0.8);
         sorcerer.setSpecialAttack("Maximum Technique: Uzamaki", 450, 1.0, false, "None");
         sorcerer.setQuote("Hmph, not bad for a bunch of filthy monkeys");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_geto);
         return sorcerer;
     }
 
@@ -187,6 +206,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Maximum Technique: Uzamaki", 225, 0.8);
         sorcerer.setSpecialAttack("Domain Expansion: Womb Perfusion", 450, 1.0, true, "None");
         sorcerer.setQuote("This is my world, a world ruled by jujitsu!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_kenjaku);
         return sorcerer;
     }
 
@@ -197,6 +217,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Perfect Sphere", 280, 0.8);
         sorcerer.setSpecialAttack("Domain Expansion: Threefold Afliction", 380, 1.0, true, "stunned");
         sorcerer.setQuote("Maybe now Sukuna-sama will love me!");
+        sorcerer.setImageId(R.drawable.im_stokleyomar_yorozu);
         return sorcerer;
     }
 }

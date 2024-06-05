@@ -1,6 +1,6 @@
 package com.poly.polyapcsafinalproject23_24;
 
-public class StokleyBattle {
+public class StokleyBattle extends GameActivity {
     private StokleySorcerer player;
     private StokleySorcerer enemy;
     private int turn;
@@ -21,8 +21,7 @@ public class StokleyBattle {
      *Both player and enemy turns are decided and both enemy and player are labeled either attacker or defender depending on the turn
      */
     {
-        beginBattle();
-        while (player.getHp() > 0 && enemy.getHp() > 0)
+        if (player.getHp() > 0 && enemy.getHp() > 0)
         {
             displayStats();
             if (turn%2==0)
@@ -34,14 +33,10 @@ public class StokleyBattle {
                 takeTurnAttacking(enemy,player);
             }
             turn++;
+            run();
         }
         //code what happens when battle ends
         // determine who lost (if player has less than or equal to 0 hp, etc)
-    }
-
-    private void beginBattle()
-    {
-
     }
 
     private void displayStats()
@@ -81,10 +76,10 @@ public class StokleyBattle {
 
         if (option == 4)
         {
-            Util.clearConsole();
+            Thread.sleep(1000);
             attacker.setBlocking(true);
             System.out.println(attacker.getName() + " is blocking.");
-            Util.pauseConsole();
+            Thread.sleep(1000);
         }
         else
         {
@@ -105,29 +100,29 @@ public class StokleyBattle {
              *Affects of heavy attacks and the affects of blocking are implemented here
              *Dialouge for blocking and attacking is established
              */
-            Util.clearConsole();
+            Thread.sleep(1000);
             if (defender.isBlocking() && !attack.isHeavyAttack())
             {
                 System.out.println(attacker.getName() + " used " + attack.getName() + "." );
-                Util.pauseConsole();
+                Thread.sleep(1000);
                 System.out.println(defender.getName() + " is blocking!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
             }
             else if (defender.isBlocking() && attack.isHeavyAttack())
             {
                 defender.takeDamage(attack.getDmg());
                 System.out.println(defender.getName() + " is blocking!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
                 System.out.println(attacker.getName() + " breaks the block!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
                 System.out.println(attacker.getName() + " used " + attack.getName() + " and " + defender.getName() + " takes " + attack.getDmg() + " damage!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
             }
             else
             {
                 defender.takeDamage(attack.getDmg());
                 System.out.println(attacker.getName() + " used " + attack.getName() + " and " + defender.getName() + " takes " + attack.getDmg() + " damage!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
             }
 
             /**
@@ -141,24 +136,24 @@ public class StokleyBattle {
             {
                 turn++;
                 System.out.println(defender.getName() + " was stunned and can't move!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
             }
             if (attack.getEffect().equals("bleed"))
             {
                 defender.takeDamage(100);
                 System.out.println(defender.getName() + " takes 100 damage from the bleed!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
             }
             if (attack.getEffect().equals("Strengthen"))
             {
                 System.out.println(attacker.getName() + " has broken their limits and gotten stronger!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
             }
             if (attack.getEffect().equals("Poisoned"))
             {
                 defender.takeDamage(75);
                 System.out.println(defender.getName() + " takes damage 75 from the poison!");
-                Util.pauseConsole();
+                Thread.sleep(1000);
             }
         }
 }
