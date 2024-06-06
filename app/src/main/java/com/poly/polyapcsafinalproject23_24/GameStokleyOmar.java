@@ -63,10 +63,7 @@ public class GameStokleyOmar extends GameActivity {
 
     private void selectCharacter()
     {
-        String text = """
- Welcome to Jujitsu Kaisen Cursed royale! Please select you fighter.
-      """;
-        System.out.println(text);
+
 
         Button btnPrev, btnNext;
         btnPrev = findViewById(R.id.btn_prev);
