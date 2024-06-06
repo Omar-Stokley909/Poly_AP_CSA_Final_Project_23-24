@@ -2,6 +2,7 @@ package com.poly.polyapcsafinalproject23_24;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -58,16 +59,16 @@ public class GameStokleyOmar extends GameActivity {
          *3. The player selects their character before going to the arena where the battle class is run
          */
         selectCharacter();
-        goToTheArena();
     }
 
     private void selectCharacter()
     {
+        setContentView(R.layout.activity_stokleyomar_character_select);
 
+        ImageButton btnPrev = findViewById(R.id.btn_prev);
+        ImageButton btnNext = findViewById(R.id.btn_next);
 
-        Button btnPrev, btnNext;
-        btnPrev = findViewById(R.id.btn_prev);
-        btnNext = findViewById(R.id.btn_next);
+        Button btnContinue = findViewById(R.id.btn_continue);
 
         curCharacterSelectIndex = 0;
 
@@ -86,6 +87,14 @@ public class GameStokleyOmar extends GameActivity {
             @Override
             public void onClick(View view) {
                 curCharacterSelectIndex = ((curCharacterSelectIndex + 1) + characters.size()) % characters.size();
+            }
+        });
+
+        btnContinue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player = characters.get(curCharacterSelectIndex);
+                goToTheArena();
             }
         });
 

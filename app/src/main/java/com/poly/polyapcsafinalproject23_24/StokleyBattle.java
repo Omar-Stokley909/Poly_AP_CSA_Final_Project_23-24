@@ -45,9 +45,17 @@ public class StokleyBattle extends GameActivity {
         if (player.getHp() > 0 && enemy.getHp() > 0) {
             displayStats();
             if (turn % 2 == 0) {
-                takeTurnAttacking(player, enemy);
+                try {
+                    takeTurnAttacking(player, enemy);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             } else {
-                takeTurnAttacking(enemy, player);
+                try {
+                    takeTurnAttacking(enemy, player);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
             turn++;
             run();

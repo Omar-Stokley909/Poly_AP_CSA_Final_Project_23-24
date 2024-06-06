@@ -112,7 +112,7 @@ public class StokleySorcererFactory {
         sorcerer.setHeavyAttacK("Soul Multiplicty", 290, 1.0);
         sorcerer.setSpecialAttack("Black Flash", 500, 1.0, false, "None");
         sorcerer.setQuote("I truly am...a curse!!!");
-        sorcerer.setImageId(R.drawable.im_stokleyomar_trueMahito);
+        sorcerer.setImageId(R.drawable.im_stokleyomar_truemahito);
         return sorcerer;
     }
 
