@@ -25,8 +25,10 @@
         <activity android:name="com.poly.polyapcsafinalproject23_24.GameLaborDayAdventure" />
         <activity android:name="com.poly.polyapcsafinalproject23_24.MainActivity" />
         <activity android:name="com.poly.polyapcsafinalproject23_24.GameHotDogEatingContest" />
-        <activity android:name="com.poly.polyapcsafinalproject23_24.StokleyBattle" />
-        <activity android:name="com.poly.polyapcsafinalproject23_24.GameStokleyOmar" />
+        <activity android:name="com.poly.polyapcsafinalproject23_24.StokleyBattle"
+            android:screenOrientation="landscape"/>
+        <activity android:name="com.poly.polyapcsafinalproject23_24.GameStokleyOmar"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>

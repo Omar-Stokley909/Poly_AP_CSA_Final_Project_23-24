@@ -1,5 +1,7 @@
 package com.poly.polyapcsafinalproject23_24;
 
+import android.media.Image;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -15,6 +17,7 @@ public class GameStokleyOmar extends GameActivity {
 
     private int curCharacterSelectIndex;
     private ImageView ivCharSelect;
+    private ImageButton btnPrev, btnNext;
 
     public GameStokleyOmar()
     {
@@ -65,8 +68,8 @@ public class GameStokleyOmar extends GameActivity {
     {
         setContentView(R.layout.activity_stokleyomar_character_select);
 
-        ImageButton btnPrev = findViewById(R.id.btn_prev);
-        ImageButton btnNext = findViewById(R.id.btn_next);
+        btnPrev = (ImageButton) findViewById(R.id.btn_prev);
+        btnNext = (ImageButton) findViewById(R.id.btn_next);
 
         Button btnContinue = findViewById(R.id.btn_continue);
 
@@ -79,6 +82,9 @@ public class GameStokleyOmar extends GameActivity {
 
                 ivCharSelect.setImageResource(characters.get(curCharacterSelectIndex).getImageId());
 
+                Log.d("curr image ID", ""+characters.get(curCharacterSelectIndex).getImageId());
+
+
 
             }
         });
@@ -87,6 +93,8 @@ public class GameStokleyOmar extends GameActivity {
             @Override
             public void onClick(View view) {
                 curCharacterSelectIndex = ((curCharacterSelectIndex + 1) + characters.size()) % characters.size();
+
+                Log.d("curr image ID", ""+characters.get(curCharacterSelectIndex).getImageId());
             }
         });
 
@@ -94,9 +102,12 @@ public class GameStokleyOmar extends GameActivity {
             @Override
             public void onClick(View view) {
                 player = characters.get(curCharacterSelectIndex);
+
+                Log.d("ClickedD", "NEXT");
                 goToTheArena();
             }
         });
+
 
     }
 
